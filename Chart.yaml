@@ -1,0 +1,12 @@
+apiVersion: v2
+name: yogstation-influxdb
+description: Yogstation InfluxDB Deployment
+
+type: application
+
+version: 0.0.1
+
+dependencies:
+  - name: influxdb2
+    repository: https://helm.influxdata.com/
+    version: 2.1.1
