@@ -90,8 +90,17 @@ influxdb2:
 #  #       secretKeyRef:
 #  #         name: my-secret
 #  #         key: my-key
-#  env: { }
-#
+  env:
+    - name: INFLUXD_HARDENING_ENABLED
+      value: "true"
+    - name: INFLUXD_METRICS_DISABLED
+      value: "true"
+    - name: INFLUXD_PPROF_DISABLED
+      value: "true"
+    - name: INFLUXD_REPORTING_DISABLED
+      value: "true"
+
+  #
 #  ## Create default user through docker entrypoint
 #  ## Defaults indicated below
 #  ##
