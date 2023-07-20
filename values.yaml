@@ -99,6 +99,8 @@ influxdb2:
       value: "true"
     - name: INFLUXD_REPORTING_DISABLED
       value: "true"
+    - name: INFLUXD_LOG_LEVEL
+      value: "debug"
 
   #
 #  ## Create default user through docker entrypoint
